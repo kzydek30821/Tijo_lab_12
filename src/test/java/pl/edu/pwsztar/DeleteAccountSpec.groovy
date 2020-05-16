@@ -9,7 +9,7 @@ class DeleteAccountSpec extends Specification{
         given: "initial data"
         def bank = new Bank();
         when: "the account is delete"
-        def number = bank.deleteAccount();
+        def number = bank.deleteAccount(id);
         then: "check status code"
         number == respone;
 
